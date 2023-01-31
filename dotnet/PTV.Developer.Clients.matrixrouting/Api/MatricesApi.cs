@@ -34,7 +34,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </remarks>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <returns>MatrixResponse</returns>
         MatrixResponse CalculateMatrix(Locations locations, string profile = default(string), List<Results> results = default(List<Results>));
@@ -47,7 +47,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </remarks>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <returns>ApiResponse of MatrixResponse</returns>
         ApiResponse<MatrixResponse> CalculateMatrixWithHttpInfo(Locations locations, string profile = default(string), List<Results> results = default(List<Results>));
@@ -122,7 +122,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </remarks>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <param name="options">Matrix Routing-relevant options like the currency for the toll costs. Use array notation like &#x60;options[currency]&#x3D;EUR&#x60; to set options. (optional)</param>
         /// <returns>MatrixIdentifier</returns>
@@ -136,7 +136,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </remarks>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <param name="options">Matrix Routing-relevant options like the currency for the toll costs. Use array notation like &#x60;options[currency]&#x3D;EUR&#x60; to set options. (optional)</param>
         /// <returns>ApiResponse of MatrixIdentifier</returns>
@@ -158,7 +158,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </remarks>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of MatrixResponse</returns>
@@ -172,7 +172,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </remarks>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (MatrixResponse)</returns>
@@ -254,7 +254,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </remarks>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <param name="options">Matrix Routing-relevant options like the currency for the toll costs. Use array notation like &#x60;options[currency]&#x3D;EUR&#x60; to set options. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
@@ -269,7 +269,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </remarks>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <param name="options">Matrix Routing-relevant options like the currency for the toll costs. Use array notation like &#x60;options[currency]&#x3D;EUR&#x60; to set options. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
@@ -400,7 +400,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </summary>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <returns>MatrixResponse</returns>
         public MatrixResponse CalculateMatrix(Locations locations, string profile = default(string), List<Results> results = default(List<Results>))
@@ -414,7 +414,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </summary>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <returns>ApiResponse of MatrixResponse</returns>
         public PTV.Developer.Clients.matrixrouting.Client.ApiResponse<MatrixResponse> CalculateMatrixWithHttpInfo(Locations locations, string profile = default(string), List<Results> results = default(List<Results>))
@@ -473,7 +473,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </summary>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of MatrixResponse</returns>
@@ -488,7 +488,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </summary>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (MatrixResponse)</returns>
@@ -900,7 +900,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </summary>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <param name="options">Matrix Routing-relevant options like the currency for the toll costs. Use array notation like &#x60;options[currency]&#x3D;EUR&#x60; to set options. (optional)</param>
         /// <returns>MatrixIdentifier</returns>
@@ -915,7 +915,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </summary>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <param name="options">Matrix Routing-relevant options like the currency for the toll costs. Use array notation like &#x60;options[currency]&#x3D;EUR&#x60; to set options. (optional)</param>
         /// <returns>ApiResponse of MatrixIdentifier</returns>
@@ -982,7 +982,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </summary>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <param name="options">Matrix Routing-relevant options like the currency for the toll costs. Use array notation like &#x60;options[currency]&#x3D;EUR&#x60; to set options. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
@@ -998,7 +998,7 @@ namespace PTV.Developer.Clients.matrixrouting.Api
         /// </summary>
         /// <exception cref="PTV.Developer.Clients.matrixrouting.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="locations"></param>
-        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
+        /// <param name="profile">A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)</param>
         /// <param name="results">Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional)</param>
         /// <param name="options">Matrix Routing-relevant options like the currency for the toll costs. Use array notation like &#x60;options[currency]&#x3D;EUR&#x60; to set options. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
