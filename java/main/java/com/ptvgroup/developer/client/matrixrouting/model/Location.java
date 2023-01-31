@@ -39,7 +39,7 @@ import com.ptvgroup.developer.client.matrixrouting.JSON;
   Location.JSON_PROPERTY_INCLUDE_LAST_METERS,
   Location.JSON_PROPERTY_MATCH_SIDE_OF_STREET
 })
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-16T15:19:26.840942Z[Etc/UTC]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-31T13:44:04.007772Z[Etc/UTC]")
 public class Location {
   public static final String JSON_PROPERTY_LATITUDE = "latitude";
   private Double latitude;

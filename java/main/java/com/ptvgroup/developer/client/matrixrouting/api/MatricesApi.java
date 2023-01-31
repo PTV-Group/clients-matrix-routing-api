@@ -43,7 +43,7 @@ import java.util.StringJoiner;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-12-16T15:19:26.840942Z[Etc/UTC]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-31T13:44:04.007772Z[Etc/UTC]")
 public class MatricesApi {
   private final HttpClient memberVarHttpClient;
   private final ObjectMapper memberVarObjectMapper;
@@ -69,7 +69,7 @@ public class MatricesApi {
    * 
    * Creates a matrix by calculating distances and travel times between given origins and destinations. \\ The &#x60;TOLL_COSTS&#x60; result option is not allowed with this operation because toll cost calculation takes much longer. If you want to get toll costs please use the startMatrixCalculation operation.
    * @param locations  (required)
-   * @param profile A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)
+   * @param profile A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)
    * @param results Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional
    * @return MatrixResponse
    * @throws ApiException if fails to make API call
@@ -83,7 +83,7 @@ public class MatricesApi {
    * 
    * Creates a matrix by calculating distances and travel times between given origins and destinations. \\ The &#x60;TOLL_COSTS&#x60; result option is not allowed with this operation because toll cost calculation takes much longer. If you want to get toll costs please use the startMatrixCalculation operation.
    * @param locations  (required)
-   * @param profile A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)
+   * @param profile A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)
    * @param results Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional
    * @return ApiResponse&lt;MatrixResponse&gt;
    * @throws ApiException if fails to make API call
@@ -374,7 +374,7 @@ public class MatricesApi {
    * 
    * Creates a matrix asynchronously by calculating distances, travel times and toll costs between given origins and destinations.\\ Please note that toll cost calculation significantly increases the operation runtime.
    * @param locations  (required)
-   * @param profile A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)
+   * @param profile A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)
    * @param results Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional
    * @param options Matrix Routing-relevant options like the currency for the toll costs. Use array notation like &#x60;options[currency]&#x3D;EUR&#x60; to set options. (optional)
    * @return MatrixIdentifier
@@ -389,7 +389,7 @@ public class MatricesApi {
    * 
    * Creates a matrix asynchronously by calculating distances, travel times and toll costs between given origins and destinations.\\ Please note that toll cost calculation significantly increases the operation runtime.
    * @param locations  (required)
-   * @param profile A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./Concepts/Profiles.htm) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)
+   * @param profile A profile defines a vehicle by a set of attributes, matching typical transport situations. It must be the name of one of the [predefined profiles](./concepts/profiles-and-countries) such as EUR_TRAILER_TRUCK. (optional, default to &quot;EUR_TRAILER_TRUCK&quot;)
    * @param results Comma-separated list that defines which results will be returned.  * &#x60;DISTANCES&#x60;     Response includes information about the distances between start and destination locations.  * &#x60;TRAVEL_TIMES&#x60;     Response includes information about the travel times between start and destination locations.  * &#x60;TOLL_COSTS&#x60;     Response includes information about the toll costs between start and destination locations.     Toll tariffs are evaluated on a normal Monday noon in the time zones CET (for European profiles), CST (for USA profiles) and AEST (for Australian profiles). (optional
    * @param options Matrix Routing-relevant options like the currency for the toll costs. Use array notation like &#x60;options[currency]&#x3D;EUR&#x60; to set options. (optional)
    * @return ApiResponse&lt;MatrixIdentifier&gt;
