@@ -44,7 +44,7 @@ import com.ptvgroup.developer.client.matrixrouting.JSON;
   ErrorResponse.JSON_PROPERTY_CAUSES,
   ErrorResponse.JSON_PROPERTY_DETAILS
 })
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-02-02T08:06:12.381652Z[Etc/UTC]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-02-02T08:19:08.199050Z[Etc/UTC]")
 public class ErrorResponse {
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
   private String description;

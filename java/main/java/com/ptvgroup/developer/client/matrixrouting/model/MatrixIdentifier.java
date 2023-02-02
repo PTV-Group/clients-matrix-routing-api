@@ -35,7 +35,7 @@ import com.ptvgroup.developer.client.matrixrouting.JSON;
 @JsonPropertyOrder({
   MatrixIdentifier.JSON_PROPERTY_ID
 })
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-02-02T08:06:12.381652Z[Etc/UTC]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-02-02T08:19:08.199050Z[Etc/UTC]")
 public class MatrixIdentifier {
   public static final String JSON_PROPERTY_ID = "id";
   private UUID id;
