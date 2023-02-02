@@ -36,7 +36,7 @@ import com.ptvgroup.developer.client.matrixrouting.JSON;
 @JsonPropertyOrder({
   StatusResponse.JSON_PROPERTY_STATUS
 })
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-01-31T13:44:04.007772Z[Etc/UTC]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-02-02T08:06:12.381652Z[Etc/UTC]")
 public class StatusResponse {
   public static final String JSON_PROPERTY_STATUS = "status";
   private CalculationStatus status;
