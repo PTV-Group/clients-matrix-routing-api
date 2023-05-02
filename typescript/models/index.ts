@@ -9,3 +9,4 @@ export * from './Options';
 export * from './Results';
 export * from './RoadAccess';
 export * from './StatusResponse';
+export * from './Warning';
