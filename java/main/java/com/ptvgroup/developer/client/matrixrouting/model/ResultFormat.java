@@ -26,19 +26,17 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * The current status of the calculation.  * &#x60;RUNNING&#x60; - The calculation is still running.  * &#x60;SUCCEEDED&#x60; - The calculation has completed successfully.  * &#x60;FAILED&#x60; - The calculation has completed with a failure.
+ * Defines the format for the distances, travel times and toll costs in the response. Note that the encoded format should be selected if **startTime** and **duration** are set.    * &#x60;PLAIN&#x60; - Values are returned as plain arrays.    * &#x60;ENCODED&#x60; - Values are returned as encoded arrays.
  */
-public enum CalculationStatus {
+public enum ResultFormat {
   
-  RUNNING("RUNNING"),
+  PLAIN("PLAIN"),
   
-  SUCCEEDED("SUCCEEDED"),
-  
-  FAILED("FAILED");
+  ENCODED("ENCODED");
 
   private String value;
 
-  CalculationStatus(String value) {
+  ResultFormat(String value) {
     this.value = value;
   }
 
@@ -53,8 +51,8 @@ public enum CalculationStatus {
   }
 
   @JsonCreator
-  public static CalculationStatus fromValue(String value) {
-    for (CalculationStatus b : CalculationStatus.values()) {
+  public static ResultFormat fromValue(String value) {
+    for (ResultFormat b : ResultFormat.values()) {
       if (b.value.equals(value)) {
         return b;
       }

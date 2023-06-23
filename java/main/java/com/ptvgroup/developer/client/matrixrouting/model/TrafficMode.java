@@ -26,19 +26,17 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * The current status of the calculation.  * &#x60;RUNNING&#x60; - The calculation is still running.  * &#x60;SUCCEEDED&#x60; - The calculation has completed successfully.  * &#x60;FAILED&#x60; - The calculation has completed with a failure.
+ * Defines how to consider traffic in a matrix calculation. * &#x60;AVERAGE&#x60; - Use the average **travelTime** for the selected vehicle.  If **startTime** is specified, the typical traffic situation for that time of day and day of week will be considered such as the rushhour  on Monday morning or light traffic on Saturday evening. Toll will be calculated according to that date and time. * &#x60;REALISTIC&#x60; - Use the most realistic **travelTime** for the selected vehicle and the  given **startTime**.  Takes into account the live traffic situation such as traffic jams or road works  as well as the typical traffic situation at the time of day and the day of week of travel such as the rushhour  on Monday morning or light traffic on Saturday evening.  See [here](./time-dependent-matrix) for more information.
  */
-public enum CalculationStatus {
+public enum TrafficMode {
   
-  RUNNING("RUNNING"),
+  AVERAGE("AVERAGE"),
   
-  SUCCEEDED("SUCCEEDED"),
-  
-  FAILED("FAILED");
+  REALISTIC("REALISTIC");
 
   private String value;
 
-  CalculationStatus(String value) {
+  TrafficMode(String value) {
     this.value = value;
   }
 
@@ -53,8 +51,8 @@ public enum CalculationStatus {
   }
 
   @JsonCreator
-  public static CalculationStatus fromValue(String value) {
-    for (CalculationStatus b : CalculationStatus.values()) {
+  public static TrafficMode fromValue(String value) {
+    for (TrafficMode b : TrafficMode.values()) {
       if (b.value.equals(value)) {
         return b;
       }
