@@ -26,31 +26,25 @@ using OpenAPIDateConverter = PTV.Developer.Clients.matrixrouting.Client.OpenAPID
 namespace PTV.Developer.Clients.matrixrouting.Model
 {
     /// <summary>
-    /// The current status of the calculation.  * &#x60;RUNNING&#x60; - The calculation is still running.  * &#x60;SUCCEEDED&#x60; - The calculation has completed successfully.  * &#x60;FAILED&#x60; - The calculation has completed with a failure.
+    /// Defines the format for the distances, travel times and toll costs in the response. Note that the encoded format should be selected if **startTime** and **duration** are set.    * &#x60;PLAIN&#x60; - Values are returned as plain arrays.    * &#x60;ENCODED&#x60; - Values are returned as encoded arrays.
     /// </summary>
-    /// <value>The current status of the calculation.  * &#x60;RUNNING&#x60; - The calculation is still running.  * &#x60;SUCCEEDED&#x60; - The calculation has completed successfully.  * &#x60;FAILED&#x60; - The calculation has completed with a failure.</value>
+    /// <value>Defines the format for the distances, travel times and toll costs in the response. Note that the encoded format should be selected if **startTime** and **duration** are set.    * &#x60;PLAIN&#x60; - Values are returned as plain arrays.    * &#x60;ENCODED&#x60; - Values are returned as encoded arrays.</value>
     
     [JsonConverter(typeof(StringEnumConverter))]
     
-    public enum CalculationStatus
+    public enum ResultFormat
     {
         /// <summary>
-        /// Enum RUNNING for value: RUNNING
+        /// Enum PLAIN for value: PLAIN
         /// </summary>
-        [EnumMember(Value = "RUNNING")]
-        RUNNING = 1,
+        [EnumMember(Value = "PLAIN")]
+        PLAIN = 1,
 
         /// <summary>
-        /// Enum SUCCEEDED for value: SUCCEEDED
+        /// Enum ENCODED for value: ENCODED
         /// </summary>
-        [EnumMember(Value = "SUCCEEDED")]
-        SUCCEEDED = 2,
-
-        /// <summary>
-        /// Enum FAILED for value: FAILED
-        /// </summary>
-        [EnumMember(Value = "FAILED")]
-        FAILED = 3
+        [EnumMember(Value = "ENCODED")]
+        ENCODED = 2
 
     }
 
