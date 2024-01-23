@@ -34,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
   MatrixIdentifier.JSON_PROPERTY_ID
 })
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-16T10:37:00.683548Z[Etc/UTC]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-23T08:14:50.380230Z[Etc/UTC]")
 public class MatrixIdentifier {
   public static final String JSON_PROPERTY_ID = "id";
   private UUID id;

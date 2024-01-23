@@ -44,7 +44,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   MatrixResponse.JSON_PROPERTY_TOLL_COSTS_ENCODED,
   MatrixResponse.JSON_PROPERTY_WARNINGS
 })
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-16T10:37:00.683548Z[Etc/UTC]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-23T08:14:50.380230Z[Etc/UTC]")
 public class MatrixResponse {
   public static final String JSON_PROPERTY_PERCENTAGE_OF_DIRECT_DISTANCE_RELATIONS = "percentageOfDirectDistanceRelations";
   private Double percentageOfDirectDistanceRelations;

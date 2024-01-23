@@ -37,7 +37,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   Locations.JSON_PROPERTY_ORIGINS,
   Locations.JSON_PROPERTY_DESTINATIONS
 })
-@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-16T10:37:00.683548Z[Etc/UTC]")
+@javax.annotation.processing.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-01-23T08:14:50.380230Z[Etc/UTC]")
 public class Locations {
   public static final String JSON_PROPERTY_ORIGINS = "origins";
   private List<Location> origins = new ArrayList<>();
