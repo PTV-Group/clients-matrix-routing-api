@@ -40,6 +40,7 @@ export interface ErrorResponse {
      * **HTTP status code: 400**  
      * * `GENERAL_VALIDATION_ERROR` - The validation of the request failed. Details can be found in **causes**.
      * * `GENERAL_PARSING_ERROR` - The JSON syntax is invalid.
+     * * `MATRIX_ROUTING_ERROR` - The calculation failed. Details can be found in **causes**.
      * 
      * **HTTP status code: 401**  
      * * `GENERAL_UNAUTHENTICATED` - Invalid or missing authentication credentials.

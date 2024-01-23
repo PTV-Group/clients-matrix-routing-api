@@ -43,7 +43,7 @@ export interface Options {
      * Defines the start time of each route, formatted according to [RFC 3339](https://tools.ietf.org/html/rfc3339).
      * This field is mutually exclusive with **tollTime**.
      * If not specified, the routes are calculated using the average speed of each road.
-     * If the date-time string does not include an explicit offset to UTC, the position of the **origins** are used to find the missing offset. If multiple offsets are detected then an exception is thrown and the distance matrix calculation is aborted totally.        
+     * If the date-time string does not include an explicit offset to UTC, the position of the **origins** are used to find the missing offset. If multiple offsets are detected then an error is returned and the distance matrix calculation is aborted totally.        
      * The date must not be before 1970-01-01T00:00:00+00:00 nor after 2037-12-31T23:59:59+00:00. 
      * If **duration** is also specified, the travel time profiles will be calculated using the horizon defined with **startTime** and **duration**
      * See [here](./concepts/time-dependent-matrix) for more information on the relevance of date and time.
@@ -55,7 +55,7 @@ export interface Options {
      * Defines the date and time at which to calculate toll prices formatted according to [RFC 3339](https://tools.ietf.org/html/rfc3339).
      * This parameter only has an influence if toll related results are requested. It can only be used in combination with **trafficMode** _AVERAGE_ 
      * and it is mutually exclusive with **startTime**.
-     * If the date-time string does not include an explicit offset to UTC, the position of the **origins** are used to find the missing offset. If multiple offsets are detected then an exception is thrown and the distance matrix calculation is aborted totally.        
+     * If the date-time string does not include an explicit offset to UTC, the position of the **origins** are used to find the missing offset. If multiple offsets are detected then an error is returned and the distance matrix calculation is aborted totally.        
      * The date must not be before 1970-01-01T00:00:00+00:00 nor after 2037-12-31T23:59:59+00:00.  
      * See [here](./concepts/toll-matrix-calculation) for more information on the relevance of date and time.
      * @type {Date}

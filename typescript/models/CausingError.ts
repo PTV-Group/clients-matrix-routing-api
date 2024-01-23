@@ -63,6 +63,10 @@ export interface CausingError {
      * * `MATRIX_ROUTING_PARAMETER_CONFLICT` - Two parameters are in conflict with each other.
      *   * `conflictingParameter` - The conflicting parameter.
      *   * `message` - The error message.
+     * 
+     * **Error codes for** `MATRIX_ROUTING_ERROR`
+     * 
+     * * `MATRIX_ROUTING_UTC_OFFSET_CANNOT_BE_DETERMINED` - The UTC offset of the origins cannot be determined.
      * @type {string}
      * @memberof CausingError
      */
