@@ -26,36 +26,36 @@ using OpenAPIDateConverter = PTV.Developer.Clients.matrixrouting.Client.OpenAPID
 namespace PTV.Developer.Clients.matrixrouting.Model
 {
     /// <summary>
-    /// MatrixIdentifier
+    /// RouteIdentifier
     /// </summary>
-    [DataContract(Name = "MatrixIdentifier")]
-    public partial class MatrixIdentifier : IValidatableObject
+    [DataContract(Name = "RouteIdentifier")]
+    public partial class RouteIdentifier : IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="MatrixIdentifier" /> class.
+        /// Initializes a new instance of the <see cref="RouteIdentifier" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected MatrixIdentifier() { }
+        protected RouteIdentifier() { }
         /// <summary>
-        /// Initializes a new instance of the <see cref="MatrixIdentifier" /> class.
+        /// Initializes a new instance of the <see cref="RouteIdentifier" /> class.
         /// </summary>
-        /// <param name="id">The ID of the matrix. (required).</param>
-        public MatrixIdentifier(Guid? id = default(Guid?))
+        /// <param name="routeId">The ID of the route. (required).</param>
+        public RouteIdentifier(Guid? routeId = default(Guid?))
         {
-            // to ensure "id" is required (not null)
-            if (id == null)
+            // to ensure "routeId" is required (not null)
+            if (routeId == null)
             {
-                throw new ArgumentNullException("id is a required property for MatrixIdentifier and cannot be null");
+                throw new ArgumentNullException("routeId is a required property for RouteIdentifier and cannot be null");
             }
-            this.Id = id;
+            this.RouteId = routeId;
         }
 
         /// <summary>
-        /// The ID of the matrix.
+        /// The ID of the route.
         /// </summary>
-        /// <value>The ID of the matrix.</value>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
-        public Guid? Id { get; set; }
+        /// <value>The ID of the route.</value>
+        [DataMember(Name = "routeId", IsRequired = true, EmitDefaultValue = true)]
+        public Guid? RouteId { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -64,8 +64,8 @@ namespace PTV.Developer.Clients.matrixrouting.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class MatrixIdentifier {\n");
-            sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("class RouteIdentifier {\n");
+            sb.Append("  RouteId: ").Append(RouteId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

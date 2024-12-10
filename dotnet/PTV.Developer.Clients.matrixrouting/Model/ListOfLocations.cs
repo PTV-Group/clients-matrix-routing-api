@@ -26,36 +26,26 @@ using OpenAPIDateConverter = PTV.Developer.Clients.matrixrouting.Client.OpenAPID
 namespace PTV.Developer.Clients.matrixrouting.Model
 {
     /// <summary>
-    /// MatrixIdentifier
+    /// ListOfLocations
     /// </summary>
-    [DataContract(Name = "MatrixIdentifier")]
-    public partial class MatrixIdentifier : IValidatableObject
+    [DataContract(Name = "ListOfLocations")]
+    public partial class ListOfLocations : IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="MatrixIdentifier" /> class.
+        /// Initializes a new instance of the <see cref="ListOfLocations" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected MatrixIdentifier() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MatrixIdentifier" /> class.
-        /// </summary>
-        /// <param name="id">The ID of the matrix. (required).</param>
-        public MatrixIdentifier(Guid? id = default(Guid?))
+        /// <param name="locations">The list of locations.The first location is the start and the last is the destination of the route. Additional intermediate locations are possible..</param>
+        public ListOfLocations(List<Location> locations = default(List<Location>))
         {
-            // to ensure "id" is required (not null)
-            if (id == null)
-            {
-                throw new ArgumentNullException("id is a required property for MatrixIdentifier and cannot be null");
-            }
-            this.Id = id;
+            this.Locations = locations;
         }
 
         /// <summary>
-        /// The ID of the matrix.
+        /// The list of locations.The first location is the start and the last is the destination of the route. Additional intermediate locations are possible.
         /// </summary>
-        /// <value>The ID of the matrix.</value>
-        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
-        public Guid? Id { get; set; }
+        /// <value>The list of locations.The first location is the start and the last is the destination of the route. Additional intermediate locations are possible.</value>
+        [DataMember(Name = "locations", EmitDefaultValue = false)]
+        public List<Location> Locations { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -64,8 +54,8 @@ namespace PTV.Developer.Clients.matrixrouting.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class MatrixIdentifier {\n");
-            sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("class ListOfLocations {\n");
+            sb.Append("  Locations: ").Append(Locations).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
