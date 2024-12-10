@@ -24,52 +24,62 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.fasterxml.jackson.annotation.JsonValue;
-import com.ptvgroup.developer.client.matrixrouting.model.CalculationStatus;
+import com.ptvgroup.developer.client.matrixrouting.model.Location;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 
 import com.ptvgroup.developer.client.matrixrouting.ApiClient;
 /**
- * Describes the status of a matrix calculation operation.
+ * ListOfLocations
  */
 @JsonPropertyOrder({
-  StatusResponse.JSON_PROPERTY_STATUS
+  ListOfLocations.JSON_PROPERTY_LOCATIONS
 })
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-12-10T13:06:20.919447521Z[Etc/UTC]", comments = "Generator version: 7.8.0")
-public class StatusResponse {
-  public static final String JSON_PROPERTY_STATUS = "status";
-  private CalculationStatus status;
+public class ListOfLocations {
+  public static final String JSON_PROPERTY_LOCATIONS = "locations";
+  private List<Location> locations = new ArrayList<>();
 
-  public StatusResponse() { 
+  public ListOfLocations() { 
   }
 
-  public StatusResponse status(CalculationStatus status) {
-    this.status = status;
+  public ListOfLocations locations(List<Location> locations) {
+    this.locations = locations;
+    return this;
+  }
+
+  public ListOfLocations addLocationsItem(Location locationsItem) {
+    if (this.locations == null) {
+      this.locations = new ArrayList<>();
+    }
+    this.locations.add(locationsItem);
     return this;
   }
 
   /**
-   * Get status
-   * @return status
+   * The list of locations.The first location is the start and the last is the destination of the route. Additional intermediate locations are possible.
+   * @return locations
    */
   @javax.annotation.Nullable
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(JSON_PROPERTY_LOCATIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public CalculationStatus getStatus() {
-    return status;
+  public List<Location> getLocations() {
+    return locations;
   }
 
 
-  @JsonProperty(JSON_PROPERTY_STATUS)
+  @JsonProperty(JSON_PROPERTY_LOCATIONS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
-  public void setStatus(CalculationStatus status) {
-    this.status = status;
+  public void setLocations(List<Location> locations) {
+    this.locations = locations;
   }
 
 
   /**
-   * Return true if this StatusResponse object is equal to o.
+   * Return true if this ListOfLocations object is equal to o.
    */
   @Override
   public boolean equals(Object o) {
@@ -79,20 +89,20 @@ public class StatusResponse {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    StatusResponse statusResponse = (StatusResponse) o;
-    return Objects.equals(this.status, statusResponse.status);
+    ListOfLocations listOfLocations = (ListOfLocations) o;
+    return Objects.equals(this.locations, listOfLocations.locations);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(status);
+    return Objects.hash(locations);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class StatusResponse {\n");
-    sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("class ListOfLocations {\n");
+    sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -140,9 +150,14 @@ public class StatusResponse {
 
     StringJoiner joiner = new StringJoiner("&");
 
-    // add `status` to the URL query string
-    if (getStatus() != null) {
-      joiner.add(String.format("%sstatus%s=%s", prefix, suffix, URLEncoder.encode(ApiClient.valueToString(getStatus()), StandardCharsets.UTF_8).replaceAll("\\+", "%20")));
+    // add `locations` to the URL query string
+    if (getLocations() != null) {
+      for (int i = 0; i < getLocations().size(); i++) {
+        if (getLocations().get(i) != null) {
+          joiner.add(getLocations().get(i).toUrlQueryString(String.format("%slocations%s%s", prefix, suffix,
+          "".equals(suffix) ? "" : String.format("%s%d%s", containerPrefix, i, containerSuffix))));
+        }
+      }
     }
 
     return joiner.toString();
